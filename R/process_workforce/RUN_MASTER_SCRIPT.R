@@ -55,7 +55,7 @@ run_master_script <- function() {
   
   # Run SQL script to insert data into the database
   message("Starting: Inserting Data into Database")
-  sql_script <- read_file("SQL/INSERT INTO.sql")  # Read SQL script
+  sql_script <- read_file("SQL/INSERT_INTO.sql")  # Read SQL script
   dbExecute(sql_connection, sql_script)  # Execute SQL script
   message("Finished: Inserting Data into Database")
   
